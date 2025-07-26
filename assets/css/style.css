@@ -1,0 +1,631 @@
+body {
+    background: #181f2b;
+    color: #edf6f9;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #282c34;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav a {
+    color: #72efdd;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+.tagline {
+    font-size: 1.35rem;
+    color: #bdb2ff;
+}
+
+.animated-gear {
+    width: 96px;
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ====== GLOBAL THEME ====== */
+body {
+    background: #13152a;
+    color: #f2eaff;
+    font-family: 'Montserrat', 'Orbitron', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+header,
+footer {
+    background: #222236;
+    border-bottom: 2px solid #b758ff;
+    box-shadow: 0 0 12px #7b29b6;
+    text-align: center;
+}
+
+header {
+    padding: 2.2rem 0 1rem 0;
+}
+
+footer {
+    border-top: 2px solid #b758ff;
+    font-size: 1.05rem;
+    padding: 1.2rem 0;
+    margin-top: 3rem;
+    box-shadow: 0 -2px 12px #7b29b6;
+}
+
+nav {
+    margin: 0.8rem 0;
+}
+
+nav a {
+    color: #b758ff;
+    margin: 0 1.3rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+    transition: color 0.15s;
+}
+
+nav a:hover {
+    color: #f492e7;
+}
+
+h1,
+h2,
+h3 {
+    color: #b758ff;
+    letter-spacing: 1.5px;
+    text-shadow: 0 1px 16px #b758ff55;
+    font-family: 'Orbitron', sans-serif;
+}
+
+a {
+    color: #b758ff;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+a:hover {
+    color: #f492e7;
+}
+
+/* ====== SECTION CARDS & NEON ====== */
+.card,
+.project-card,
+.blog-list article,
+.contact-section {
+    background: #181b2cdd;
+    border-radius: 2rem;
+    box-shadow: 0 0 40px #b758ffcc;
+    border: 2px solid #7b29b6;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 750px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover,
+.project-card:hover {
+    box-shadow: 0 0 24px #b758ff;
+}
+
+/* ====== FORMS AND BUTTONS ====== */
+label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f492e7;
+    font-size: 1rem;
+}
+
+input,
+textarea {
+    background: #222236;
+    border: 1.5px solid #b758ff70;
+    border-radius: 0.8em;
+    color: #f2eaff;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    outline: none;
+    transition: border 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border: 2px solid #b758ff;
+    box-shadow: 0 0 8px #b758ff66;
+}
+
+button[type="submit"],
+.btn-glow {
+    background: linear-gradient(90deg, #b758ff 65%, #f492e7 100%);
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 0.7em;
+    padding: 0.7em 1.7em;
+    box-shadow: 0 0 16px #b758ff90, 0 0 7px #f492e799 inset;
+    cursor: pointer;
+    margin-top: 0.6em;
+    transition: background 0.18s;
+}
+
+button[type="submit"]:hover,
+.btn-glow:hover {
+    background: linear-gradient(90deg, #f492e7 55%, #b758ff 100%);
+    box-shadow: 0 0 20px #f492e7bb;
+}
+
+/* ====== BADGES AND NEON ACCENTS ====== */
+.badge {
+    background: linear-gradient(90deg, #b758ff 60%, #f492e7 100%);
+    color: #fff;
+    border-radius: 1em;
+    padding: 0.5em 1.3em;
+    font-size: 1em;
+    margin-right: 0.8em;
+    box-shadow: 0 0 8px #b758ffaa;
+}
+
+.neon-divider {
+    height: auto;
+    width: auto;
+    margin: 2.5rem auto;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #b758ff 60%, #f492e7 100%);
+    box-shadow: 0 0 16px #b758ff88;
+}
+
+/* ====== CONTACT LINKS ====== */
+.contact-links {
+    margin-top: 2.2rem;
+    text-align: center;
+}
+
+.contact-links p {
+    color: #b758ff;
+    margin-bottom: 0.7rem;
+}
+
+.contact-links a {
+    display: inline-block;
+    color: #fff;
+    background: #b758ff77;
+    padding: 0.55em 1.1em;
+    margin: 0 0.6em 0.8em 0.6em;
+    border-radius: 1em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 8px #7b29b6;
+    text-decoration: none;
+    transition: background 0.18s, color 0.18s;
+}
+
+.contact-links a:hover {
+    background: #f492e7;
+    color: #13152a;
+}
+
+/* ====== MERMAID & CUSTOM CHART SECTIONS ====== */
+.chart-section,
+.mermaid {
+    background: #181b2c88;
+    border-radius: 2rem;
+    color: #fff;
+    padding: 2rem 1.3rem;
+    box-shadow: 0 0 40px #b758ff99;
+    margin: 2rem auto;
+    max-width: 760px;
+    overflow: auto;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 640px) {
+
+    .card,
+    .project-card,
+    .blog-list article,
+    .contact-section,
+    .chart-section,
+    .mermaid {
+        padding: 1.2rem 0.6rem;
+        border-radius: 1rem;
+        max-width: 98vw;
+    }
+
+    nav a {
+        margin: 0 0.7rem;
+        font-size: 0.93em;
+    }
+}
+
+/* ====== CONTACT PAGE GRID LAYOUT ====== */
+
+.contact-info {
+    background: transparent;
+    border-radius: 2rem;
+    box-shadow: 0 0 40px #b758ffcc;
+    border: 2px solid #7b29b6;
+    padding: 2rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.contact-info h2 {
+    color: #b758ff;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.contact-info p {
+    color: #b758ff;
+    margin-bottom: 2rem;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.contact-links {
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    background: #b758ff77;
+    color: #fff;
+    padding: 0.6em 1.3em;
+    border-radius: 1.4em;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1em;
+    box-shadow: 0 0 10px #7b29b6;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.contact-links a:hover {
+    background: #f492e7;
+    color: #13152a;
+}
+
+.qr-code {
+    margin-top: 2rem;
+    max-width: 160px;
+    border-radius: 1rem;
+    box-shadow: 0 0 15px #b758ffaa;
+    align-self: center;
+}
+
+/* Retain neon-divider style from previous CSS */
+.neon-divider {
+    height: 4px;
+    width: 140px;
+    margin: 2.5rem auto;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #b758ff 60%, #f492e7 100%);
+    box-shadow: 0 0 16px #b758ff88;
+}
+
+/* ====== ABOUT PAGE GRID LAYOUT ====== */
+.about-grid.grid-container {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "bio side"
+        "timeline timeline";
+    gap: 2.6rem 3rem;
+    max-width: 1100px;
+    margin: 3rem auto 3.5rem auto;
+    padding: 0 2rem;
+}
+
+.about-bio {
+    grid-area: bio;
+}
+
+.about-side {
+    grid-area: side;
+}
+
+.about-timeline {
+    grid-area: timeline;
+}
+
+@media (max-width: 980px) {
+    .about-grid.grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "bio"
+            "side"
+            "timeline";
+        gap: 1.5rem 0;
+        padding: 0 0.6rem;
+    }
+}
+
+/* List styles for highlights/certifications */
+.about-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 1.1rem 0 2rem 0;
+}
+
+.about-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.7em;
+    color: #f492e7 ;
+    font-weight: bold;
+    margin-right: 1.2em;
+    font-size: .88em;
+    letter-spacing: 1px;
+    vertical-align: middle
+}
+
+.about-list li::before {
+    content: "•";
+    color: #f492e7;
+    font-size: 1.3em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Timeline Infographic Style */
+.about-timeline {
+    margin-top: 0;
+    background: #1c1d34ee;
+    border-left: 4.5px solid #b758ff;
+}
+
+.timeline-list {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 2rem;
+    position: relative;
+}
+
+.timeline-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(90deg, #b758ff, #f492e7 80%);
+    border-radius: 50%;
+    margin-right: 1.1em;
+    box-shadow: 0 2px 10px #b758ffbb;
+    vertical-align: middle;
+}
+
+.timeline-year {
+    font-family: 'Orbitron', sans-serif;
+    color: #b758ff;
+    font-weight: bold;
+    margin-right: 1.2em;
+    font-size: 1.08em;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.timeline-list li {
+    margin-bottom: 1.1em;
+    color: #edf6fa;
+    font-size: 1.02em;
+    letter-spacing: 0.1px;
+}
+
+/* Responsive for timeline */
+@media (max-width: 640px) {
+    .about-timeline {
+        padding: 1.2rem 0.5rem 1.2rem 0.7rem;
+        border-radius: 1rem;
+    }
+
+    .timeline-list {
+        padding-left: 1rem;
+    }
+}
+
+body {
+    background: #13152a;
+    color: #f2eaff;
+    font-family: 'Montserrat', 'Orbitron', Arial, sans-serif;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.light-mode {
+    background: #f7f9fd;
+    color: #262158;
+}
+
+body.light-mode header,
+body.light-mode footer {
+    background: #e6e1f6;
+    border-color: #f492e7;
+    box-shadow: 0 0 10px #f492e7;
+}
+
+body.light-mode nav a {
+    color: #7b29b6;
+}
+
+body.light-mode nav a:hover {
+    color: #b758ff;
+}
+
+body.light-mode .card,
+body.light-mode .project-card,
+body.light-mode .blog-list article,
+body.light-mode .contact-section,
+body.light-mode .about-timeline,
+body.light-mode .about-side,
+body.light-mode .about-bio {
+    background: #fff5faee;
+    border-color: #f492e7;
+    box-shadow: 0 0 20px #f492e7aa;
+    color: #2c1851;
+}
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3 {
+    color: #a052e0;
+    text-shadow: 0 1px 8px #c49bfa55;
+}
+
+body.light-mode label {
+    color: #7b29b6;
+}
+
+body.light-mode .badge,
+body.light-mode .contact-links a {
+    background: linear-gradient(90deg, #a052e0 60%, #f492e7 100%);
+    color: #fff;
+    box-shadow: 0 0 8px #c49bfa99;
+}
+
+/* ====== HOME PAGE GRID STYLE ====== */
+.hero-grid.grid-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 2.8rem 3rem;
+    max-width: 1100px;
+    margin: 3rem auto 3.5rem auto;
+    padding: 0 2rem;
+    align-items: stretch;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 350px;
+}
+
+.hero-description{
+    text-align: justify;
+}
+
+.hero-tagline {
+    font-size: 1.32em;
+    color: #b758ff;
+    font-family: 'Orbitron', sans-serif;
+    margin: 1em 0 0.1em 0;
+}
+
+.hero-links {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.1em;
+}
+
+.hero-links .btn-glow {
+    font-size: 1em;
+    padding: 0.7em 2em;
+    border-radius: 1.4em;
+}
+
+.hero-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    background: #181b2cee;
+}
+
+.hero-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.4em;
+    margin-bottom: 2.1em;
+}
+
+.hero-svg {
+    width: 58px;
+    height: 58px;
+    filter: drop-shadow(0 0 15px #b758ffcc);
+    -webkit-filter: drop-shadow(0 0 15px #b758ffcc);
+}
+
+.hero-fastfacts {
+    width: 100%;
+    background: transparent;
+    border-radius: 1.2em;
+    box-shadow: 0 0 22px #b758ff66;
+    padding: 1.7em 1.3em 1.1em 1.3em;
+}
+
+.hero-fastfacts h3 {
+    color: #f492e7;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.08em;
+    text-align: left;
+}
+
+.hero-fastfacts ul {
+    list-style-type: none;
+    margin: 0.7em 0 0 0;
+    padding: 0;
+}
+
+.hero-fastfacts ul li {
+    color: #b758ff;
+    margin-bottom: 0.6em;
+    position: relative;
+    padding-left: 1.2em;
+}
+
+.hero-fastfacts ul li::before {
+    content: "•";
+    color: #b758ff;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Info/CTA Section */
+.hero-info {
+    max-width: 900px;
+    margin: 0 auto 2.5rem auto;
+    text-align: center;
+    padding: 2.5em 1.6em;
+}
+
+.hero-info .centered {
+    text-align: center;
+    margin: 0.6em 0;
+}
+
+@media (max-width: 980px) {
+    .hero-grid.grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 2.5rem 0;
+        padding: 0 0.8rem;
+    }
+}
+
+/* Add more styling for sections, cards, dark mode, etc. */
